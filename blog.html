@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
+    <style>
+      .container{
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+      }
+      table, th, td {
+  border: 1px solid;
+}
+th, td{
+  padding: 20px 40px;
+}
+p{
+  font-size: 16px;
+  line-height: 27px;
+}
+    </style>
 </head>
 <body>
+  <section class="container">
     <h2>Blog</h2>
     <h3>Difference between local storage and session storage</h3>
     <table>
@@ -14,8 +33,7 @@
         <tr>
           <th>Local Storage</th>
           <th>Session storage</th>
-        </tr>
-        
+        </tr>      
         <tr>
           <td>The stored data is not deleted when the browser is closed.</td>
           <td>The data is stored only for the session and will be deleted when the browser is closed.</td>
@@ -29,5 +47,25 @@
             <td>It allows 5MB of data to be stored.</td>
           </tr>
       </table>
+      <br>
+      <h3><strong>Variable Scope: Global vs. Local</strong></h3>
+      <p><strong>Global Scope:</strong></p>
+      <p>Global scope contains all of the things defined outside of all code blocks. A code block simply consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples of structure that create a code block. A global variable has
+         global scope. A global variable is accessible from anywhere in the code.</p>
+      <p><strong>Local Scope:</strong></p>
+      <p>
+        Local scope contains things defined inside code blocks. A local variable has local scope. 
+        A local variable is only accessible where it’s declared.
+      </p>
+
+      <h2><strong>Event Listener</strong></h2>
+      <p>
+        An event listener is a function that initiates a predefined process if a specific event occurs. So, an event listener “listens” for an action, then calls a function that performs a related task. This event can take one of many forms. 
+        Common examples include mouse events, keyboard events, and window events.
+      </p>
+      <p>You can listen for events on any element in the DOM. JavaScript has an addEventListener() function that you can call on any element on a web page. The addEventListener() function is a method of the EventTarget interface. All objects that support events implement this interface. 
+        This includes the window, the document, and individual elements on the page.</p>
+
+      </section>
 </body>
 </html>
